@@ -1,0 +1,25 @@
+DirectoryIndex disabled
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{HTTP_HOST} ^www\.avanceytecnologia\.com$
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^/?$ "http\:\/\/avanceytecnologia\.com\/" [R=301,L]
+RewriteRule ^(.*)$ "http\:\/\/192\.169\.200\.114\:8000\/$1" [P,L]
+
+# Con especificamos cache
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 10 days"
+ExpiresByType text/css "access plus 1 week"
+ExpiresByType text/plain "access plus 1 week"
+ExpiresByType image/gif "access plus 1 month"
+ExpiresByType image/png "access plus 1 month"
+ExpiresByType image/jpeg "access plus 1 month"
+ExpiresByType image/x-icon "access plus 3 months"
+ExpiresByType application/x-javascript "access plus 1 month"
+ExpiresByType application/javascript "access plus 1 week"
+ExpiresByType text/javascript "access plus 1 week"
+ExpiresByType application/x-icon "access plus 3 months"
+</IfModule>
+# FIN

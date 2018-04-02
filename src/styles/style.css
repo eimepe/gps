@@ -1,0 +1,150 @@
+.slider .indicators .indicator-item.active{
+      background-color: #1e88e5 !important;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.espacioright{
+  margin-right: 6%;
+}
+.espacioleft{
+  margin-left: 6%;
+}
+
+
+.sidebar {
+
+    height: 350px;
+    overflow: scroll;
+}
+@font-face {
+    font-family: avantecn;
+    src: url(tt0628m_.ttf);
+}
+.margin-0{
+  margin: 0px 0px 0px 0px !important;
+  padding: 0px 0px 0px 0px !important;
+
+}
+
+.container-fluid{
+    width: 95% !important;
+    margin: auto;
+}
+
+.grid-element-wrap {
+    margin-bottom: 1.5rem;
+}
+
+.grid-element-wrap .grid-element .grid-element-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    margin: 0;
+    line-height: 2.8rem;
+    padding: 0 10px;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid-element-wrap .grid-element .btn-floating.btn-large {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -28px;
+    margin-left: -28px;
+    opacity: 0;
+}
+
+.grid-element-wrap .grid-element {
+    position: relative;
+    display: block;
+}
+
+.grid-element-wrap .grid-element .grid-element-bg {
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.image:hover img {
+    -webkit-transform:scale(1.25); /* Safari and Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* IE 9 */
+    -o-transform:scale(1.25); /* Opera */
+     transform:scale(1.25);
+}
+
+.grid-element-wrap .grid-element:hover .btn-floating {
+    opacity: 1;
+}
+
+html{
+
+}
+
+nav .brand-logo{
+background-image: url('../img/logo.png') !important;
+background-repeat: no-repeat;
+background-position: center;
+ color: rgba(215, 44, 44, 0) !important;
+
+}
+nav ul a{
+    font-family: avantecn !important;
+    font-size: 110% !important;
+}
+a:active, a:hover{
+  color: #00A9E0 !important;
+}
+.fondo{
+    text-shadow: 0 5px 5px rgba(0,0,0,0.3);
+/*text-shadow: 10px 1px 10px #ffffff;*/
+padding: 15px;
+/****background-color: rgba(0, 0, 0, 0.3);*/
+border-radius: 10px;
+width: 50%;
+}
+.fondo p{
+  font-weight: 900;
+  font-size: 200%;
+}
+.slider .slides li .caption{
+  left: 1%;
+  bottom: 5%;
+  top: auto;
+}
+.fondocolor{
+background-color: rgba(0, 0, 0, 0.7);
+}
+
+.homeSlider .indicators{
+  right: 5%;
+bottom: 30px;
+z-index: 40;
+text-align: right;
+}
+.slider{
+  height: 400px !important;
+}

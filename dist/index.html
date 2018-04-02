@@ -1,0 +1,198 @@
+
+
+
+
+
+
+  <!DOCTYPE html>
+  <html>
+    <head>
+    <style>
+    #snackbar {
+        visibility: hidden;
+        min-width: 250px;
+        margin-left: -125px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 2px;
+        padding: 16px;
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        bottom: 30px;
+        font-size: 17px;
+    }
+
+    #snackbar.show {
+        visibility: visible;
+        -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @-webkit-keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @keyframes fadein {
+        from {bottom: 0; opacity: 0;}
+        to {bottom: 30px; opacity: 1;}
+    }
+
+    @-webkit-keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+    @keyframes fadeout {
+        from {bottom: 30px; opacity: 1;}
+        to {bottom: 0; opacity: 0;}
+    }
+
+
+
+
+    body{
+      color: #ffffff;
+    }
+    .textare{
+          width: 1px;
+          height: 1px;
+        }
+
+    #login{
+      background: rgba(0, 0, 0, 0.6);
+      width: 50%;
+      padding: 3%;
+      float: right;
+      bottom: 2px;
+      margin: 40px;
+      margin-top: 200px;
+      border-radius: 12px;
+      color: #ffffff;
+
+    }
+
+    #create{
+      background: rgba(0, 0, 0, 0.6);
+      width: 80%;
+      padding: 3%;
+      float: left;;
+      bottom: 2px;
+      margin: 40px;
+
+      border-radius: 12px;
+      color: #ffffff;
+
+    }
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+       #map {
+         height: 350px;
+         width: 95%;
+         margin: auto;
+         padding-top: 25px;
+         top: 25px;
+         margin-bottom: auto;
+
+       }
+       #maps{
+         width: 80%;
+         margin: auto;
+         border-radius: 15px;
+         height: 400px;
+         background: rgba(0, 0, 0, 0.6);
+         margin-bottom: 10px;
+       }
+       #sidebar{
+
+          background: rgba(0, 0, 0, 0.6);
+           border-radius: 15px;
+           width: 80%;
+           margin: auto;
+            margin-top: 22px;
+            padding: 10px;
+            color: #ffffff;
+       }
+       .navbar-brand {
+         margin-left: 40% !important;
+       }
+
+       .sidebar{
+
+          background: rgba(0, 0, 0, 0.6);
+           border-radius: 15px;
+           width: 80%;
+           margin: auto;
+            margin-top: 22px;
+            padding: 10px;
+            color: #ffffff;
+       }
+
+       .table{
+         color: #ffffff !important;
+         margin: 10px, 10px, 10px, 10px;
+       }
+
+
+
+       .navbar-default{
+         background: none !important;
+         border: none !important;
+
+       }
+
+       .navbar-default .navbar-nav>li>a{
+         color: #ffffff !important;
+       }
+
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+         background: none !important;
+         color: #ffffff !important;
+       }
+
+      /* Optional: Makes the sample page fill the window. */
+
+    </style>
+      <title id="title"></title>
+      <!--Import Google Icon Font-->
+      <meta name="google-site-verification" content="H8wtiDhACX2m7Mwmekz-BDv_BIRMkfeO8VixqfQjJbU" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Oswald" rel="stylesheet">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+      <!--Import materialize.css-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body >
+
+      <div id="app">
+
+
+
+      <script>__REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__</script>
+
+
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGDdgrnM1m9UT3oehLCY8cRBItHYe3FTM&signed_in=true"></script>
+      <!--Import jQuery before materialize.js-->
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          <script type="text/javascript" src="/assets/app.js"></script>
+
+          
+
+
+</div>
+
+    </body>
+  </html>
